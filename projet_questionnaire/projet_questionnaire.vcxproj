@@ -21,12 +21,16 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Question.cpp" />
+    <ClCompile Include="QuestionNumerique.cpp" />
     <ClCompile Include="QuestionTexte.cpp" />
+    <ClCompile Include="teste_runner.cpp" />
+    <ClCompile Include="TestQuestionNumerique.cpp" />
     <ClCompile Include="TestQuestionTexte.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="doctest.h" />
     <ClInclude Include="Question.h" />
+    <ClInclude Include="QuestionNumerique.h" />
     <ClInclude Include="QuestionTexte.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

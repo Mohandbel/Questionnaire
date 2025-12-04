@@ -1,7 +1,7 @@
-#define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
+
 #include"doctest.h"
 #include"QuestionTexte.h"
-TEST_CASE("test de la class question")
+TEST_CASE("test de la class question texte")
 {
     QuestionTexte q1("Capitale", "Quelle est la capitale de la France", "Paris");
     SUBCASE("Le constructeur fonctionne")
