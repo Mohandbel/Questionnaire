@@ -11,7 +11,7 @@ TEST_CASE("test de la class question texte")
         }
     SUBCASE("La verification de la reponse fonctionne")
         {
-            CHECK(q1.verifierReponse("Paris") == true);
-            CHECK(q1.verifierReponse("Berlin") == false);
+        REQUIRE_UNARY(q1.verifierReponse("Paris"));
+        REQUIRE_UNARY_FALSE(q1.verifierReponse("Berlin"));
         }
 }

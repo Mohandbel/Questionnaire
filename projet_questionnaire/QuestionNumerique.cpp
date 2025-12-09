@@ -29,8 +29,10 @@ bool QuestionNumerique::verifierReponse(std::string reponseUtilisateur) const {
     }
 }
 
-void QuestionNumerique::afficher() const {
-    std::cout<< d_bonneReponse;
+void QuestionNumerique::AfficherQuestion() const {
+    Question::AfficherQuestion();
+    std::cout << "(Réponse attendue entre " << d_min
+        << " et " << d_max << ")" << std::endl;
 }
 int QuestionNumerique::max()const
 {
