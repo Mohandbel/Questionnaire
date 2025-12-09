@@ -14,8 +14,7 @@ bool QuestionTexte::verifierReponse(std::string reponseUtilisateur) const {
     return reponseUtilisateur == d_bonneReponse;
 }
 
-void QuestionTexte::afficher() const{
-    std::cout << "Intitulé : " << d_intitule << std::endl;
-    std::cout << "Question : " << d_texte << std::endl;
-    std::cout << "Reponse : " << d_bonneReponse << std::endl;
+void QuestionTexte::AfficherQuestion() const{
+    Question::AfficherQuestion();
+
 }

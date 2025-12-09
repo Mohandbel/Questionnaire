@@ -10,7 +10,7 @@ public:
          const std::string& texte,
          const std::string& bonneReponse);
 
-     void afficher()const  override;
+     void AfficherQuestion()const  override;
      bool verifierReponse(std::string reponseUtilisateur) const override;
 
 private:

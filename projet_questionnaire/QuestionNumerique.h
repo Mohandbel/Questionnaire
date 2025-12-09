@@ -13,7 +13,7 @@ public:
     int min()const;
 
     bool verifierReponse(std::string reponseUtilisateur) const override;
-    void afficher() const override;
+    void AfficherQuestion() const override;
 
 private:
     int d_bonneReponse;

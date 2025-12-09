@@ -22,7 +22,9 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Question.cpp" />
     <ClCompile Include="QuestionNumerique.cpp" />
+    <ClCompile Include="QuestionQCM.cpp" />
     <ClCompile Include="QuestionTexte.cpp" />
+    <ClCompile Include="TestQuestionQCM.cpp" />
     <ClCompile Include="teste_runner.cpp" />
     <ClCompile Include="TestQuestionNumerique.cpp" />
     <ClCompile Include="TestQuestionTexte.cpp" />
@@ -31,6 +33,7 @@
     <ClInclude Include="doctest.h" />
     <ClInclude Include="Question.h" />
     <ClInclude Include="QuestionNumerique.h" />
+    <ClInclude Include="QuestionQCM.h" />
     <ClInclude Include="QuestionTexte.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

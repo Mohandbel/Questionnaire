@@ -8,7 +8,7 @@ public:
 	virtual ~Question() = default;
 	std::string getIntitule()const;
 	std::string getTexte()const;
-	virtual void afficher()const = 0;
+	virtual void AfficherQuestion()const;
 	virtual bool verifierReponse(std::string reponseUtilisateur) const = 0;
 
 protected:
