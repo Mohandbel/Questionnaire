@@ -34,6 +34,10 @@ void QuestionNumerique::AfficherQuestion() const {
     std::cout << "(Réponse attendue entre " << d_min
         << " et " << d_max << ")" << std::endl;
 }
+void QuestionNumerique::AfficherReponse() const
+{
+    std::cout << "La reponse est :" << d_bonneReponse << std::endl;
+}
 int QuestionNumerique::max()const
 {
     return d_max;

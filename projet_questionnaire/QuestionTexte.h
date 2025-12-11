@@ -12,6 +12,8 @@ public:
 
      void AfficherQuestion()const  override;
      bool verifierReponse(std::string reponseUtilisateur) const override;
+     void AfficherReponse() const override;
+     void ecrire(std::ostream& os)const override;
 
 private:
     std::string d_bonneReponse;

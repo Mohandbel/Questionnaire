@@ -10,6 +10,9 @@ public:
 	std::string getTexte()const;
 	virtual void AfficherQuestion()const;
 	virtual bool verifierReponse(std::string reponseUtilisateur) const = 0;
+	virtual void AfficherReponse() const = 0;
+	virtual void ecrire(std::ostream& os)const = 0;
+
 
 protected:
 	std::string d_intitule;
