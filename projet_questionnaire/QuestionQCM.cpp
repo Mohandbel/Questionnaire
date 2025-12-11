@@ -29,3 +29,7 @@ void QuestionQCM::AfficherQuestion() const {
         std::cout << (i + 1) << ". " << d_propositions[i] << std::endl;
     }
 }
+void QuestionQCM::AfficherReponse() const
+{
+    std::cout << "La reponse est" << d_propositions[d_bonneReponse] << std::endl;
+}

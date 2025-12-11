@@ -18,3 +18,7 @@ void QuestionTexte::AfficherQuestion() const{
     Question::AfficherQuestion();
 
 }
+void QuestionTexte::AfficherReponse() const
+{
+    std::cout << "La reponse est :" << d_bonneReponse << std::endl;
+}
