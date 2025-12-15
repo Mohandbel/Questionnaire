@@ -33,3 +33,16 @@ void QuestionQCM::AfficherReponse() const
 {
     std::cout << "La reponse est" << d_propositions[d_bonneReponse] << std::endl;
 }
+void QuestionQCM::ecrire(std::ostream& os) const
+{
+    
+    os << "QCM" << "\n";
+
+    
+    os << d_intitule << "\n"<< d_texte << "\n"<< d_bonneReponse << "\n" << d_propositions.size() << "\n";
+
+    
+    for (const auto& choix : d_propositions) {
+        os << choix << "\n";
+    }
+}

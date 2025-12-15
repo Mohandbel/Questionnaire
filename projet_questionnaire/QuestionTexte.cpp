@@ -22,3 +22,7 @@ void QuestionTexte::AfficherReponse() const
 {
     std::cout << "La reponse est :" << d_bonneReponse << std::endl;
 }
+void QuestionTexte::ecrire(std::ostream& os) const
+{
+    os << "T" << "\n" << d_intitule << "\n" << d_texte << "\n" << d_bonneReponse << std::endl;
+}
