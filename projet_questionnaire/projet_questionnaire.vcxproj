@@ -29,7 +29,10 @@
     <ClCompile Include="QuestionQCM.cpp" />
     <ClCompile Include="QuestionTexte.cpp" />
     <ClCompile Include="TestQuestionQCM.cpp" />
-    <ClCompile Include="teste_runner.cpp" />
+    <ClCompile Include="teste_runner.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="TestQuestionNumerique.cpp" />
     <ClCompile Include="TestQuestionTexte.cpp" />
   </ItemGroup>
