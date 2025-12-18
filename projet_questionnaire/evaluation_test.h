@@ -6,8 +6,8 @@
 
 
 
-//Chaque question est posée une seule fois dans l'ordre
- //Les bonnes réponses ne sont jamais affichées
+//Chaque question est posÃ©e une seule fois dans l'ordre
+ //Les bonnes rÃ©ponses ne sont jamais affichÃ©es
 
 
 class EvaluationTest : public Evaluation {
