@@ -19,18 +19,29 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="evaluation.cpp" />
+    <ClCompile Include="evaluation_adaptative.cpp" />
+    <ClCompile Include="evaluation_deuxemme_chance.cpp" />
+    <ClCompile Include="evaluation_test.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Question.cpp" />
     <ClCompile Include="QuestionNumerique.cpp" />
     <ClCompile Include="QuestionQCM.cpp" />
     <ClCompile Include="QuestionTexte.cpp" />
     <ClCompile Include="TestQuestionQCM.cpp" />
-    <ClCompile Include="teste_runner.cpp" />
+    <ClCompile Include="teste_runner.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="TestQuestionNumerique.cpp" />
     <ClCompile Include="TestQuestionTexte.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="doctest.h" />
+    <ClInclude Include="evaluation.h" />
+    <ClInclude Include="evaluation_adaptative.h" />
+    <ClInclude Include="evaluation_deuxemme_chance.h" />
+    <ClInclude Include="evaluation_test.h" />
     <ClInclude Include="Question.h" />
     <ClInclude Include="QuestionNumerique.h" />
     <ClInclude Include="QuestionQCM.h" />

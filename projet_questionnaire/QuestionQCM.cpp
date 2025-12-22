@@ -1,7 +1,7 @@
 #include "QuestionQCM.h"
 #include <cstdlib>
-#include<vector>
-#include<iostream>
+#include <vector>
+#include <iostream>
 
 QuestionQCM::QuestionQCM(const std::string& intitule,
     const std::string& texte,
@@ -13,7 +13,7 @@ QuestionQCM::QuestionQCM(const std::string& intitule,
 {
 }
 
-bool QuestionQCM::verifierReponse( std::string rep) const {
+bool QuestionQCM::verifierReponse( const std::string& rep) const {
     try {
         int valeur = std::stoi(rep);
         return valeur == d_bonneReponse;
@@ -31,5 +31,18 @@ void QuestionQCM::AfficherQuestion() const {
 }
 void QuestionQCM::AfficherReponse() const
 {
-    std::cout << "La reponse est" << d_propositions[d_bonneReponse] << std::endl;
+    std::cout << "La réponse est" << d_propositions[d_bonneReponse -1 ] << std::endl;
+}
+void QuestionQCM::ecrire(std::ostream& os) const
+{
+    
+    os << "QCM" << "\n";
+
+    
+    os << d_intitule << "\n"<< d_texte << "\n"<< d_bonneReponse << "\n" << d_propositions.size() << "\n";
+
+    
+    for (const auto& choix : d_propositions) {
+        os << choix << "\n";
+    }
 }

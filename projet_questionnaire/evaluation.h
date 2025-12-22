@@ -1,4 +1,4 @@
-#pragma once
+
 
 #ifndef EVALUATION_H
 #define EVALUATION_H

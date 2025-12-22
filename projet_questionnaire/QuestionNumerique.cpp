@@ -1,7 +1,7 @@
 #include "QuestionNumerique.h"
 #include <cstdlib> 
 #include <stdexcept>
-#include<iostream>
+#include <iostream>
 
 QuestionNumerique::QuestionNumerique(const std::string& intitule,
     const std::string& texte,
@@ -45,4 +45,8 @@ int QuestionNumerique::max()const
 int QuestionNumerique::min() const
 {
     return d_min;
+}
+void QuestionNumerique::ecrire(std::ostream& os)const
+{
+    os << "N" << "\n" << d_intitule << "\n" << d_texte << "\n" << d_bonneReponse << "\n" << d_min << "\n" << d_max << std::endl;
 }
