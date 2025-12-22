@@ -1,4 +1,3 @@
-#pragma once
 
 #ifndef EVALUATION_ADAPTATIVE_H
 #define EVALUATION_ADAPTATIVE_H

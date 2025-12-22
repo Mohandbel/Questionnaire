@@ -11,7 +11,7 @@
             const std::vector<std::string>& propositions,
             int bonneReponse);
 
-        bool verifierReponse(std::string rep) const override;
+        bool verifierReponse(const std::string& rep) const override;
         void AfficherQuestion() const override;
         void AfficherReponse() const override;
         void ecrire(std::ostream& os) const override;

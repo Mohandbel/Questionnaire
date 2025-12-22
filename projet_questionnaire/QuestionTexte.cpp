@@ -10,7 +10,7 @@ QuestionTexte::QuestionTexte(const std::string& intitule,
 {
 }
 
-bool QuestionTexte::verifierReponse(std::string reponseUtilisateur) const {
+bool QuestionTexte::verifierReponse(const std::string& reponseUtilisateur) const {
     return reponseUtilisateur == d_bonneReponse;
 }
 
@@ -20,7 +20,7 @@ void QuestionTexte::AfficherQuestion() const{
 }
 void QuestionTexte::AfficherReponse() const
 {
-    std::cout << "La reponse est :" << d_bonneReponse << std::endl;
+    std::cout << "La réponse est :" << d_bonneReponse << std::endl;
 }
 void QuestionTexte::ecrire(std::ostream& os) const
 {

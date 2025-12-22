@@ -1,4 +1,4 @@
-#pragma once
+
 
 #ifndef EVALUATION_H
 #define EVALUATION_H
@@ -6,7 +6,7 @@
 #include <vector>
 #include <memory>
 #include <string>
-#include "question.h"
+#include "Question.h"
 
 class Evaluation {
 protected:

@@ -1,4 +1,4 @@
-#pragma once
+
 #ifndef EVALUATIONSECONDECHANCE_H
 #define EVALUATIONSECONDECHANCE_H
 
@@ -19,4 +19,4 @@ public:
 
 
 
-#endif // DEUXEMMECHANCE_H_INCLUDED
+#endif 
