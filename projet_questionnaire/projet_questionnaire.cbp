@@ -123,6 +123,12 @@
 				</Linker>
 			</Target>
 		</Build>
+		<Unit filename="../../../../Documents/projet_qualiteprogg/Questionnaire/projet_questionnaire/evaluationtest.cpp" />
+		<Unit filename="EvaluationSecondeChanceTest.cpp">
+			<Option target="Debug Win32" />
+			<Option target="Debug x64" />
+			<Option target="Release x64" />
+		</Unit>
 		<Unit filename="Question.cpp" />
 		<Unit filename="Question.h" />
 		<Unit filename="QuestionNumerique.cpp" />
