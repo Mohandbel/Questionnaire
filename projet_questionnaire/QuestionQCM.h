@@ -3,6 +3,7 @@
 
     #include "Question.h"
     #include<vector>
+#include<memory>
 
     class QuestionQCM : public Question {
     public:
@@ -17,6 +18,7 @@
         void ecrire(std::ostream& os) const override;
         const std::vector<std::string>& propositions() const;
         int bonneReponse() const;
+        std::unique_ptr<Question> clone() const override;
 
     private:
         std::vector<std::string> d_propositions;

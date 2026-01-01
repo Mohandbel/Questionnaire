@@ -62,7 +62,7 @@ TEST_CASE("EvaluationAdaptative - Repositionnement après erreur") {
 
     // Récupérer la première question
     Question* q1 = eval.questionCourante();
-    std::string intitule1 = q1->intitule();
+    std::string intitule1 = q1->Intitule();
 
     // Répondre incorrectement
     eval.repondre("mauvaise", afficher);
@@ -145,7 +145,7 @@ TEST_CASE("EvaluationAdaptative - Avec questions numériques") {
     // Tester avec différents types de questions
     Question* q = eval.questionCourante();
 
-    if (q->intitule() == "QNum1") {
+    if (q->Intitule() == "QNum1") {
         CHECK(eval.repondre("15", afficher) == true);
     }
     else {

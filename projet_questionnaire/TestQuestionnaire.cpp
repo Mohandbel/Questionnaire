@@ -45,9 +45,9 @@ TEST_CASE("Questionnaire - Ajout de questions")
     }
 
     SUBCASE("Les questions sont accessibles") {
-        REQUIRE_EQ(questionnaire.question(0).getIntitule(), "Q1");
-        REQUIRE_EQ(questionnaire.question(1).getIntitule(), "Q2");
-        REQUIRE_EQ(questionnaire.question(2).getIntitule(), "Q3");
+        REQUIRE_EQ(questionnaire.question(0).Intitule(), "Q1");
+        REQUIRE_EQ(questionnaire.question(1).Intitule(), "Q2");
+        REQUIRE_EQ(questionnaire.question(2).Intitule(), "Q3");
     }
 }
 
@@ -105,8 +105,8 @@ TEST_CASE("Questionnaire - Sauvegarde et chargement")
 
         REQUIRE_EQ(questionnaireCharge.titre(), "Mon Quiz");
         REQUIRE_EQ(questionnaireCharge.nombreQuestions(), 2);
-        REQUIRE_EQ(questionnaireCharge.question(0).getIntitule(), "Q1");
-        REQUIRE_EQ(questionnaireCharge.question(1).getIntitule(), "Q2");
+        REQUIRE_EQ(questionnaireCharge.question(0).Intitule(), "Q1");
+        REQUIRE_EQ(questionnaireCharge.question(1).Intitule(), "Q2");
     }
 }
 

@@ -23,12 +23,10 @@ private:
     void afficherMenuPrincipal();
     int lireChoix(int min, int max);
 
+
     // Gestion du questionnaire
     void creerQuestionnaire();
     void ajouterQuestion();
-    void ajouterQuestionTexte();
-    void ajouterQuestionNumerique();
-    void ajouterQuestionQCM();
     void afficherQuestionnaire();
     void sauvegarderQuestionnaire();
     void chargerQuestionnaire();
@@ -44,13 +42,11 @@ private:
     void executerEvaluation(Evaluation& evaluation);
 
     // Utilitaires
-    std::string lireLigne(const std::string& prompt);
-    int lireEntier(const std::string& prompt);
     void attendreEntree();
     std::vector<std::unique_ptr<Question>> creerCopiesQuestions();
 
     std::unique_ptr<Questionnaire> d_questionnaire;
-    bool d_questionnaireExiste;
+    std::string d_nomFichierCourant;
 };
 
 #endif // EXECUTE_H

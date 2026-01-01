@@ -30,3 +30,6 @@ void QuestionTexte::ecrire(std::ostream& os) const
 {
     os << "T" << "\n" << d_intitule << "\n" << d_texte << "\n" << d_bonneReponse << std::endl;
 }
+std::unique_ptr<Question> QuestionTexte::clone() const  {
+    return std::make_unique<QuestionTexte>(*this); // Utilise le constructeur de copie par défaut
+}
