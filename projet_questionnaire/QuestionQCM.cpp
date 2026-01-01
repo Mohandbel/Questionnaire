@@ -16,7 +16,7 @@ QuestionQCM::QuestionQCM(const std::string& intitule,
 bool QuestionQCM::verifierReponse( std::string rep) const {
     try {
         int valeur = std::stoi(rep);
-        return valeur == d_bonneReponse;
+        return valeur == d_bonneReponse+1;
     }
     catch (...) {
         return false;
@@ -45,4 +45,13 @@ void QuestionQCM::ecrire(std::ostream& os) const
     for (const auto& choix : d_propositions) {
         os << choix << "\n";
     }
+}
+const std::vector<std::string>& QuestionQCM::propositions() const 
+{
+    return d_propositions; 
+}
+
+int QuestionQCM::bonneReponse() const
+{
+    return d_bonneReponse; 
 }

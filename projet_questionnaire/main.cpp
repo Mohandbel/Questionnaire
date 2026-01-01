@@ -1,7 +1,8 @@
-//#include <iostream>
+#include <iostream>
+#include "Execute.h"
 
-//int main() {
-    //std::cout << "hello world !" << std::endl;
-    //return 0;
-    // //kjhvghvqjsx
-//}
+int main() {
+    Execute application;
+    application.lancer();
+    return 0;
+}
