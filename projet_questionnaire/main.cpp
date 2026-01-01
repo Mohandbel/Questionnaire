@@ -1,6 +1,8 @@
 #include <iostream>
+#include "Execute.h"
 
 int main() {
-    std::cout << "hello world !" << std::endl;
+    Execute application;
+    application.lancer();
     return 0;
 }

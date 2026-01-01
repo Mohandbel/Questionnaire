@@ -16,6 +16,7 @@ public:
     void AfficherQuestion() const override;
     void AfficherReponse() const override;
     void ecrire(std::ostream& os) const override;
+    int bonneReponse() const;
 
 private:
     int d_bonneReponse;

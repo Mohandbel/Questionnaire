@@ -48,10 +48,13 @@
     <ClCompile Include="evaluation_adaptative.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="evaluation_deuxemme_chance.cpp">
+    <ClCompile Include="evaluation_test.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="evaluation_test.cpp">
+    <ClCompile Include="evaluation_deuxieme_chance.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Execute.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
   </ItemGroup>
@@ -77,10 +80,13 @@
     <ClInclude Include="evaluation_adaptative.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
-    <ClInclude Include="evaluation_deuxemme_chance.h">
+    <ClInclude Include="evaluation_test.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
-    <ClInclude Include="evaluation_test.h">
+    <ClInclude Include="evaluation_deuxieme_chance.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="Execute.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
   </ItemGroup>
