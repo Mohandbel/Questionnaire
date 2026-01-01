@@ -3,6 +3,7 @@
 
 #include "Question.h"
 #include<string>
+#include<memory>
 
 class QuestionTexte : public Question {
 public:
@@ -15,6 +16,7 @@ public:
      void AfficherReponse() const override;
      void ecrire(std::ostream& os)const override;
      std::string bonneReponse() const;
+     std::unique_ptr<Question> clone() const override;
 
 private:
     std::string d_bonneReponse;

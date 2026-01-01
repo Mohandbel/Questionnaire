@@ -4,11 +4,11 @@
 Question::Question(std::string intitule, std::string texte):
 	d_intitule{intitule},d_texte{texte}
 {}
-std::string Question::getIntitule()const
+std::string Question::Intitule()const
 {
 	return d_intitule;
 }
-std::string Question::getTexte()const
+std::string Question::Texte()const
 {
 	return d_texte;
 }

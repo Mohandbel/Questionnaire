@@ -15,7 +15,7 @@ QuestionNumerique::QuestionNumerique(const std::string& intitule,
 {
 }
 
-bool QuestionNumerique::verifierReponse(std::string reponseUtilisateur) const {
+bool QuestionNumerique::verifierReponse(const std::string & reponseUtilisateur) const {
     try {
         int valeur = std::stoi(reponseUtilisateur);
 
@@ -53,4 +53,7 @@ void QuestionNumerique::ecrire(std::ostream& os)const
 int QuestionNumerique::bonneReponse() const 
 { 
     return d_bonneReponse;
+}
+std::unique_ptr<Question> QuestionNumerique::clone() const {
+    return std::make_unique<QuestionNumerique>(*this); // Utilise le constructeur de copie par défaut
 }

@@ -21,10 +21,11 @@ bool EvaluationAdaptative::repondre(const std::string& reponseUtilisateur,
     }
 
     bool correcte = q->verifierReponse(reponseUtilisateur); 
+    d_dernierReponseCorrecte = correcte;
 
     if (correcte) {
         d_nbBonnesReponses++;
-        afficherBonneReponse = false;  /
+        afficherBonneReponse = false;  
     }
     else {
         // Déplacer la question incorrecte à la fin
