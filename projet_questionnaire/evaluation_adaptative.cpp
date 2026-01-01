@@ -20,12 +20,11 @@ bool EvaluationAdaptative::repondre(const std::string& reponseUtilisateur,
         return false;
     }
 
-    bool correcte = q->verifierReponse(reponseUtilisateur); // verifier repense  estimer de la classe question
-    d_dernierReponseCorrecte = correcte;
+    bool correcte = q->verifierReponse(reponseUtilisateur); 
 
     if (correcte) {
         d_nbBonnesReponses++;
-        afficherBonneReponse = false;  // pas nécessaire ici
+        afficherBonneReponse = false;  /
     }
     else {
         // Déplacer la question incorrecte à la fin

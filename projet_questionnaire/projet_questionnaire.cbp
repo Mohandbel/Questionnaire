@@ -123,6 +123,11 @@
 				</Linker>
 			</Target>
 		</Build>
+		<Unit filename="EvaluationSecondeChanceTest.cpp">
+			<Option target="Debug Win32" />
+			<Option target="Debug x64" />
+			<Option target="Release x64" />
+		</Unit>
 		<Unit filename="Question.cpp" />
 		<Unit filename="Question.h" />
 		<Unit filename="QuestionNumerique.cpp" />
@@ -136,6 +141,9 @@
 		<Unit filename="TestQuestionTexte.cpp" />
 		<Unit filename="doctest.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="test_evaluation.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
 		<Unit filename="teste_runner.cpp" />
 		<Extensions />
 	</Project>

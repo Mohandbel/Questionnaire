@@ -1,7 +1,7 @@
 #include "QuestionNumerique.h"
 #include <cstdlib> 
 #include <stdexcept>
-#include<iostream>
+#include <iostream>
 
 QuestionNumerique::QuestionNumerique(const std::string& intitule,
     const std::string& texte,

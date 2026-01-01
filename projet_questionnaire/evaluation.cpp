@@ -15,22 +15,10 @@ bool Evaluation::aEncoreQuestions() const {
 
     return d_indiceCourant < static_cast<int>(d_listeQuestions.size());
 }
-/*
-Question* Evaluation::questionCourante() const {
-    if (!aEncoreQuestions()) return nullptr;
-    return d_listeQuestions[d_indiceCourant].  ;// on vas utiliser la fonction de la classe question qui retourne une question
-}
-*/
-Question* Evaluation::questionCourante() const {
-    // Vérification de sécurité : s'il n'y a plus de questions
-    if (!aEncoreQuestions()) {
-        return nullptr;
-    }
 
-    // Extrait le pointeur brut du unique_ptr avec .get()
-    return d_listeQuestions[d_indiceCourant].get();
+Question* Evaluation::questionCourante() const {
+    return aEncoreQuestions() ? d_listeQuestions[d_indiceCourant].get() : nullptr;
 }
-
 
 void Evaluation::questionSuivante() {
     // Vérifie qu'il reste des questions avant d'incrémenter
